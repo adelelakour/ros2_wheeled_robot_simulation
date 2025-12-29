@@ -70,6 +70,7 @@
                            o_xyz="0 0 0" o_rpy="0 0 0"/>
     </link>
 
+
     <joint name="base_joint" type="fixed">
         <parent link="base_footprint" />
         <child link="base_link" />
@@ -95,5 +96,7 @@
         <child link="caster_wheel_link" />
         <origin xyz="${base_length / 3.0} 0 ${-wheel_radius / 2.0}" rpy="0 0 0" />
     </joint>
+
+
 
 </robot>
