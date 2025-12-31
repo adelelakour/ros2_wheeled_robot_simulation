@@ -13,8 +13,17 @@
                value = "$(command 'xacro $(var urdf_path)')"/>
     </node>
 
+     <node pkg="rviz2" exec="rviz2" output="screen" args="-d /home/adel/robot_config.rviz" />
+
+     <node
+          pkg="joint_state_publisher_gui"
+          exec="joint_state_publisher_gui"
+          name="joint_state_publisher_gui"
+          output="screen" />
+
+     <!-- 
+     
     <include file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
-      <!--     <arg name="gz_args" value="empty.sdf -r"/> -->
           
           <arg name="gz_args" value="-r $(find-pkg-share my_robot_bringup)/worlds/robo_uav_wall.sdf"/> 
 
@@ -29,7 +38,9 @@
           value="$(var gazebo_bridge_config_path)"/>
      </node>
 
+     -->
+
+
       
-    <node pkg="rviz2" exec="rviz2" output="screen" args="-d /home/adel/robot_config.rviz" />
 
 </launch>
