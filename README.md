@@ -1,5 +1,7 @@
 # ROS 2 Wheeled Robot + 2-DOF Arm (Gazebo Sim + RViz)
 
+![Demo](./ros2_proj2.gif)  
+
 A ROS 2 project that spawns a wheeled robot with a simple 2-joint arm from URDF/Xacro, simulates it in Gazebo Sim (Ignition / gz-sim), and visualizes the TF and robot model in RViz. Joint position commands and joint states are bridged between ROS 2 and Gazebo using `ros_gz_bridge`.
 
 ## Packages
